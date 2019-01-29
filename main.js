@@ -1,5 +1,11 @@
 // Create our 'main' state that will contain the game
 const mainState = {
+  init: function() {
+    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    this.scale.pageAlignHorizontally = true;
+    this.scale.pageAlignVertically = true;
+  },
+
   preload: function() {
     // This function will be executed at the beginning
     // That's where we load the images and sounds
